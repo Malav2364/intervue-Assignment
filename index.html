@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/08c5e6bb1d.js" crossorigin="anonymous"></script>
+    <title>Intervue</title>
+</head>
+<body>
+        <!-- HEADER SECTION -->
+    <header class="flex justify-between items-center py-4 px-6 bg-white">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+        <img src="./assets/logo.svg" alt="Intervue Logo" class="h-6 w-auto" />
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-gray-800 hover:text-black text-sm font-semibold flex items-center content-center space-x-1">
+        <i class="fa-solid fa-user"></i>
+        <span>Become an interviewer</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+        </a>
+        <a href="#" class="text-gray-800 hover:text-black text-sm">features</a>
+        <a href="#" class="text-gray-800 hover:text-black text-sm">Pricing</a>
+        <a href="#" class="text-gray-800 hover:text-black text-sm">Start a trial</a>
+        <div class="flex ">
+            <button class="ml-2 border border-gray-900 text-gray-900 text-sm px-4 py-2 rounded cursor-pointer">Login</button>
+            <button class="ml-2 bg-gray-900 text-white text-sm px-4 py-2 rounded cursor-pointer">Signup</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav/Menu Button -->
+    <div class="md:hidden flex items-center">
+        <button id="mobile-menu" class="focus:outline-none">
+        <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        </button>
+    </div>
+    </header>
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-nav-menu" class="hidden md:hidden bg-white px-6 py-4 border-t border-gray-200">
+        <a href="#" class="block py-2 text-gray-800 hover:text-black font-semibold flex items-center space-x-1">
+            <i class="fa-solid fa-user"></i>
+            <span>Become an interviewer</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-3 h-3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+        </a>
+        <a href="#" class="block py-2 text-gray-800 hover:text-black">features</a>
+        <a href="#" class="block py-2 text-gray-800 hover:text-black">Pricing</a>
+        <a href="#" class="block py-2 text-gray-800 hover:text-black">Start a trial</a>
+        <div class="mt-4 pt-4 border-t border-gray-200">
+            <button class="w-full border border-gray-900 text-gray-900 text-sm px-4 py-2 rounded cursor-pointer">Login</button>
+            <button class="w-full mt-2 bg-gray-900 text-white text-sm px-4 py-2 rounded cursor-pointer">Signup</button>
+        </div>
+    </div>
+    <!-- HERO / TITLE / SEARCH SECTION -->
+<section class="flex flex-col items-center text-center py-20 bg-white px-4">
+  <!-- Title -->
+  <h1 class="text-4xl  text-gray-900 mb-2">Technical Interview Resources</h1>
+  <!-- Subtitle -->
+  <p class="text-gray-500 text-sm mb-8">Find all the technical interview resources here</p>
+  <!-- Search Bar -->
+  <div class="w-full max-w-xl">
+    <div class="relative">
+      <input
+        type="text"
+        placeholder="Search for resource here"
+        class="w-full pl-12 pr-4 py-3 rounded-full bg-gray-100 focus:outline-none text-gray-700 placeholder-gray-400"
+      />
+      <span class="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+    </div>
+  </div>
+</section>
+<!-- RESOURCES GRID SECTION -->
+<section class="py-10 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- EASY CARD EXAMPLE -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+      <div class="flex items-center mb-3">
+        <span class="px-3 py-1 rounded-md bg-blue-600 text-white font-semibold text-xs">Easy</span>
+        <span class="ml-3 text-xs text-gray-500 uppercase tracking-wider">Data Structures & Algorithms</span>
+      </div>
+      <h2 class="font-semibold text-lg mb-2 text-gray-900">Design a Free Food App</h2>
+      <p class="text-sm text-gray-500 leading-relaxed">
+        We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews.
+      </p>
+    </div>
+
+    <!-- MEDIUM CARD EXAMPLE -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+      <div class="flex items-center mb-3">
+        <span class="px-3 py-1 rounded-md bg-orange-500 text-white font-semibold text-xs">Medium</span>
+        <span class="ml-3 text-xs text-gray-500 uppercase tracking-wider">Data Structures & Algorithms</span>
+      </div>
+      <h2 class="font-semibold text-lg mb-2 text-gray-900">Design a Free Food App</h2>
+      <p class="text-sm text-gray-500 leading-relaxed">
+        We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews.
+      </p>
+    </div>
+
+    <!-- HARD CARD EXAMPLE -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+      <div class="flex items-center mb-3">
+        <span class="px-3 py-1 rounded-md bg-green-600 text-white font-semibold text-xs">Hard</span>
+        <span class="ml-3 text-xs text-gray-500 uppercase tracking-wider">Data Structures & Algorithms</span>
+      </div>
+      <h2 class="font-semibold text-lg mb-2 text-gray-900">Design a Free Food App</h2>
+      <p class="text-sm text-gray-500 leading-relaxed">
+        We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews.
+      </p>
+    </div>
+
+    <!-- ROW 2 -->
+    <!-- EASY CARD -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+      <div class="flex items-center mb-3">
+        <span class="px-3 py-1 rounded-md bg-blue-600 text-white font-semibold text-xs">Easy</span>
+        <span class="ml-3 text-xs text-gray-500 uppercase tracking-wider">Data Structures & Algorithms</span>
+      </div>
+      <h2 class="font-semibold text-lg mb-2 text-gray-900">Design a Free Food App</h2>
+      <p class="text-sm text-gray-500 leading-relaxed">
+        We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews.
+      </p>
+    </div>
+
+    <!-- MEDIUM CARD -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+      <div class="flex items-center mb-3">
+        <span class="px-3 py-1 rounded-md bg-orange-500 text-white font-semibold text-xs">Medium</span>
+        <span class="ml-3 text-xs text-gray-500 uppercase tracking-wider">Data Structures & Algorithms</span>
+      </div>
+      <h2 class="font-semibold text-lg mb-2 text-gray-900">Design a Free Food App</h2>
+      <p class="text-sm text-gray-500 leading-relaxed">
+        We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews.
+      </p>
+    </div>
+
+    <!-- HARD CARD -->
+    <div class="bg-white border border-gray-200 rounded-lg p-6">
+      <div class="flex items-center mb-3">
+        <span class="px-3 py-1 rounded-md bg-green-600 text-white font-semibold text-xs">Hard</span>
+        <span class="ml-3 text-xs text-gray-500 uppercase tracking-wider">Data Structures & Algorithms</span>
+      </div>
+      <h2 class="font-semibold text-lg mb-2 text-gray-900">Design a Free Food App</h2>
+      <p class="text-sm text-gray-500 leading-relaxed">
+        We created this guide after speaking with our community of interviewers, which includes over 100 current and former Amazon engineers, as well as our corpus of mock interviews.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- SECURITY / TOP PRIORITY SECTION -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl  text-gray-900 mb-2">Security is our top priority</h2>
+    <p class="text-gray-500 mb-10">
+      Intervue serves startups to fortune 500 companies with enterprise grade security baked in by design
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Security Card -->
+      <div class="bg-white rounded-lg border border-gray-200 p-6 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+        <div>
+          <span class="mb-4 inline-block text-2xl text-gray-800"><i class="fa-solid fa-key"></i></span>
+          <h3 class="font-semibold mb-2 text-gray-900">Security</h3>
+          <p class="text-sm text-gray-500">Protecting your data at every layer is fundamental to how Intervue works</p>
+        </div>
+        <span class="mt-4 text-gray-800 self-end"><i class="fa-solid fa-arrow-right-long"></i></span>
+      </div>
+      <!-- Compliance Card -->
+      <div class="bg-white rounded-lg border border-gray-200 p-6 flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+        <div>
+          <span class="mb-4 inline-block text-2xl text-gray-800"><i class="fa-solid fa-layer-group"></i></span>
+          <h3 class="font-semibold mb-2 text-gray-900">Compliances</h3>
+          <p class="text-sm text-gray-500">Enterprise grade compliance commitments where we have established controls to adhere to those commitments.</p>
+        </div>
+        <span class="mt-4 text-gray-800 self-end"><i class="fa-solid fa-arrow-right-long"></i></span>
+      </div>
+      <!-- Startups & Enterprises Column -->
+      <div class="flex flex-col gap-6">
+        <!-- Startups Card -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 flex items-center justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl text-gray-800"><i class="fa-solid fa-rocket"></i></span>
+            <h3 class="font-semibold text-gray-900">Intervue for Startups</h3>
+          </div>
+          <span class="text-gray-800"><i class="fa-solid fa-arrow-right-long"></i></span>
+        </div>
+        <!-- Enterprises Card -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 flex items-center justify-between transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+          <div class="flex items-center gap-4">
+            <span class="text-2xl text-gray-800"><i class="fa-solid fa-globe"></i></span>
+            <h3 class="font-semibold text-gray-900">Intervue for Enterprises</h3>
+          </div>
+          <span class="text-gray-800"><i class="fa-solid fa-arrow-right-long"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL SECTION -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Testimonial Video/Image -->
+    <div class="relative">
+      <img src="./assets/testimg.png" alt="Testimonial from Niket Gupta" class="rounded-l-lg rounded-r-[80px] w-full h-auto object-cover shadow-lg" />
+      <!-- Play Button -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <button class="w-20 h-20 flex items-center justify-center">
+        </button>
+      </div>
+      <!-- User Info on Image -->
+      <div class="absolute bottom-6 left-6 text-white">
+        <p class="font-semibold">Niket Gupta</p>
+        <p class="text-sm opacity-80">Head of Acquisition, Yubi</p>
+      </div>
+    </div>
+    <!-- Testimonial Text -->
+    <div class="space-y-4">
+      <p class="text-gray-600 text-xl leading-relaxed">
+        "After interviewing candidates on Intervue, we were able to convert at least 5% of people from our application base to hires."
+      </p>
+      <div>
+        <p class="font-bold text-gray-900">Niket Gupta</p>
+        <p class="text-gray-500 text-sm">Group head of talent acquisition, Yubi</p>
+      </div>
+      <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">
+        See more customer stories <i class="fa-solid fa-arrow-right-long ml-1"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS / FEATURES CARDS SECTION -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl  text-gray-900 mb-12 text-center">Explore more products on intervue</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1: On-demand Interviews -->
+      <div class="bg-white rounded-lg border border-gray-200 shadow-md flex flex-col overflow-hidden">
+        <div class="bg-gray-50 p-4 border-b border-gray-200">
+          <div class="flex items-center gap-2 mb-4">
+          </div>
+          <img src="./assets/card1.png" alt="Matching Interviewer UI" class="w-full h-auto" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">On-demand</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Save 90% of engineering & recruitment bandwidth, outsource candidate interviews to us.
+          </p>
+          <a href="#" class="text-blue-600 text-sm font-semibold hover:underline mt-auto">Know more <i class="fa-solid fa-arrow-right-long ml-1"></i></a>
+        </div>
+      </div>
+      <!-- Card 2: Live interviews -->
+      <div class="bg-white rounded-lg border border-gray-200 shadow-md flex flex-col overflow-hidden">
+        <div class="bg-gray-50 p-4 border-b border-gray-200">
+           <img src="./assets/card2.png" alt="Live Interview UI" class="w-full h-auto rounded-md" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">Live interviews</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Assess candidates in real-time with our live coding environment & integrated video calls.
+          </p>
+          <a href="#" class="text-blue-600 text-sm font-semibold hover:underline mt-auto">Know more <i class="fa-solid fa-arrow-right-long ml-1"></i></a>
+        </div>
+      </div>
+      <!-- Card 3: Assessments -->
+      <div class="bg-white rounded-lg border border-gray-200 shadow-md flex flex-col overflow-hidden">
+        <div class="bg-gray-50 p-4 border-b border-gray-200">
+           <img src="./assets/card3.png" alt="Assessment Report UI" class="w-full h-auto rounded-md" />
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <h3 class="font-semibold text-lg text-gray-900 mb-2">Assessments</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Share assessments across batches with MCQ, Programming and Subjective questions.
+          </p>
+          <a href="#" class="text-blue-600 text-sm font-semibold hover:underline mt-auto">Know more <i class="fa-solid fa-arrow-right-long ml-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="py-20 bg-pink-50">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <!-- Left Column: Title and Contact -->
+    <div class="space-y-8">
+      <h2 class="text-3xl font-bold text-gray-800">Frequently Asked Questions</h2>
+      <p class="text-gray-600">
+        Here are frequently asked questions to clear all your doubts.
+      </p>
+      <div>
+        <p class="text-gray-600 mb-2">Still have doubts?</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">
+          <i class="fa-solid fa-phone mr-2"></i>Talk to our representative
+        </a>
+      </div>
+    </div>
+    <!-- Right Column: Accordion -->
+    <div class="md:col-span-2">
+      <div class="space-y-6 border-t border-gray-900 pt-6">
+        <!-- FAQ Item 1 -->
+        <details class="group border-b border-gray-900 pb-4">
+          <summary class="font-medium text-gray-900 cursor-pointer list-none flex justify-between items-center">
+            How do I schedule an interview?
+            <span class="group-open:hidden"><i class="fa-solid fa-plus"></i></span>
+            <span class="hidden group-open:block"><i class="fa-solid fa-minus"></i></span>
+          </summary>
+          <p class="mt-3 text-gray-700 text-sm">
+            You can schedule interviews by selecting a slot on our platform and confirming your details.
+          </p>
+        </details>
+        <!-- FAQ Item 2 -->
+        <details class="group border-b border-gray-900 pb-4">
+          <summary class="font-medium text-gray-900 cursor-pointer list-none flex justify-between items-center">
+            Will I be charged per interview?
+            <span class="group-open:hidden"><i class="fa-solid fa-plus"></i></span>
+            <span class="hidden group-open:block"><i class="fa-solid fa-minus"></i></span>
+          </summary>
+          <p class="mt-3 text-gray-700 text-sm">
+            Yes, charges are applied per interview. Check our pricing page for more details.
+          </p>
+        </details>
+        <!-- FAQ Item 3 -->
+        <details class="group pb-4">
+          <summary class="font-medium text-gray-900 cursor-pointer list-none flex justify-between items-center">
+            Can I get a trial for On-demand interviews?
+            <span class="group-open:hidden"><i class="fa-solid fa-plus"></i></span>
+            <span class="hidden group-open:block"><i class="fa-solid fa-minus"></i></span>
+          </summary>
+          <p class="mt-3 text-gray-700 text-sm">
+            Yes, you can request a trial by contacting our support or sales team.
+          </p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="bg-gray-900 text-gray-400 pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <!-- Logo, Social & Form Column -->
+      <div class="lg:col-span-1">
+        <img src="./assets/logo-white.svg" alt="Intervue Logo" class="h-7 w-auto mb-6" />
+        <div class="mb-4">
+          <span class="font-semibold text-yellow-400">Hire better & faster</span>
+        </div>
+        <form class="flex items-center border-b border-gray-600 py-2">
+          <input type="email" placeholder="Enter your email address" class="w-full bg-transparent text-gray-300 placeholder-gray-500 border-none focus:ring-0" />
+          <button type="submit" class="text-yellow-400 font-bold text-xl hover:text-yellow-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Spacer for desktop -->
+      <div class="hidden lg:block"></div>
+
+      <!-- Link Columns -->
+      <div class="lg:col-span-1 grid grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-semibold text-white mb-3">Menu</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="#" class="hover:text-white">Pricing</a></li>
+            <li><a href="#" class="hover:text-white">Case studies</a></li>
+            <li><a href="#" class="hover:text-white">Features</a></li>
+            <li><a href="#" class="hover:text-white">Downloads</a></li>
+            <li><a href="#" class="hover:text-white">Updates</a></li>
+            <li><a href="#" class="hover:text-white">Changelog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-3">Company</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Contact us</a></li>
+            <li><a href="#" class="hover:text-white">Careers</a></li>
+            <li><a href="#" class="hover:text-white">Culture</a></li>
+            <li><a href="#" class="hover:text-white">Help Center</a></li>
+            <li><a href="#" class="hover:text-white">Support</a></li>
+            <li><a href="#" class="hover:text-white">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+      <span>© 2023 Intervue. Crafted by great minds.</span>
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        <a href="#" class="hover:text-white">Datenschutz</a>
+        <a href="#" class="hover:text-white">Impressum</a>
+        <a href="#" class="hover:text-white">Cookie Policy</a>
+        <a href="#" class="hover:text-white">AGBs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu');
+    const mobileNavMenu = document.getElementById('mobile-nav-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileNavMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+
+</html>
